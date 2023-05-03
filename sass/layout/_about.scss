@@ -1,0 +1,98 @@
+.about-label {
+ font-weight: 700;
+ font-size: 18px;
+ line-height: 1.22;
+ text-align: center;
+ text-transform: uppercase;
+ color: var(--main-text-color-light);
+ margin-bottom: 12px;
+}
+
+.about-main-title {
+ font-family: 'Seymour One'; 
+ font-weight: 400;
+ font-size: 30px;
+ line-height: 1.27;
+ text-align: center;
+ letter-spacing: 0.04em;
+ text-transform: uppercase;
+ color: var(--main-text-color-light);
+ margin-bottom: 54px;
+}
+
+.cow { 
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 279px;
+    height: 278px;
+    border-radius: 140px;
+    margin-bottom: 40px;
+}
+
+.cow::before {
+    content: "";
+    position: absolute;
+    background-color: var(--accent-color);
+    border-radius: 140px;
+    top: -22px;
+}
+
+.about-description-list {
+ width: 220px;
+ margin-left: auto;
+ margin-right: auto;
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 176%;
+ text-align: center;
+ letter-spacing: 0.04em;
+ color: var(--main-text-color-light);
+}
+
+.modal-btn-about {
+    width: 164px;
+    margin: 24px auto 50px auto;
+}
+
+.about-products-icon-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    background-color: var(--accent-color) ;    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.about-products-weight {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-text-color-light);
+  margin-bottom: 16px;
+}
+
+.about-products-description {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    color: var(--main-text-color-light);
+    // margin-bottom: 32px;
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}

@@ -1,0 +1,231 @@
+.hero-container {
+    position: relative;
+    padding-top: 50px;
+}
+    
+.main-title__title1,
+.main-title__title2,
+.main-title__title3 {
+    display: block;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--main-text-color-light);
+}
+  
+.main-title__title3 {
+    font-size: 34px;
+    line-height: 96.5%;
+} 
+  
+  .distribution {
+    display: none;
+  }
+  
+  .buttons-hero {
+    margin-top: 32px;
+  }
+  
+  .btn-products {
+    width: 108px;
+    height: 38px;
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--btn-text-dark);
+    padding: 12px 26px;
+    margin-right: 12px;
+  }
+  
+  .btn-how {
+    width: 100px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-decoration-line: underline;
+    color: var(--accent-color);
+    padding: 0;
+  }
+
+  .hero-tumb {
+    position: relative;
+    height: 236px;
+  }
+    
+  .lot-of-ice-cream,
+  .motto {
+    display: none;
+  }
+  
+  .ice-cream {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+  }
+  
+  .dots {
+    position: absolute;
+    fill: var(--accent-color);
+    right: 0;
+    bottom: 0;
+  }
+  
+  .dots-mobile480 {
+    display: none;
+  }
+
+  .dots-tablet {
+    display: none;
+  }
+
+  .dots-desktop {
+    display: none;
+  }
+
+  @media screen and (min-width: 480px) {
+
+    .hero-tumb {
+      height: 150px;
+    }
+
+    .ice-cream {
+      right: 20px;      
+    }
+
+    .dots-mobile320 {
+      display: none;
+    }
+    .dots-mobile480 {
+      display: block;
+    }
+
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .dots-mobile480 {
+      display: none;
+    }
+
+    .dots-tablet {
+      display: block;
+    }
+
+    .hero-tumb {
+      display: flex;
+      height: 176px;
+    }
+    
+    .distribution {
+      display: flex;
+      row-gap: 20px;
+      flex-direction: column;
+      position: absolute;
+      right: 32px;
+      top: 28px;
+    }
+    
+    .distribution-quantity {
+     font-weight: 900;
+     font-size: 28px;
+     line-height: 1.21;
+     text-align: right;
+     letter-spacing: 0.04em;
+     text-transform: uppercase;
+     color: var(--main-text-color-dark);
+    }
+    
+    .distribution-points {
+      display: block;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 10px;
+      text-align: right;
+     color: var(--main-text-color-light);
+    }
+      
+    .dots-left {
+      left: 0;
+      width: 110px;
+      height: 34px;
+    }
+    
+    .lot-of-ice-cream,
+    .motto {
+     display: block;
+    }
+    
+    .lot-of-ice-cream {
+      position: absolute;
+      left: 0;
+      bottom: 12px;
+    }
+    
+    .motto {
+      margin-top: 40px;
+      margin-left: 184px;
+      width: 166px;
+      height: 98;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: var(--btn-text-light);
+    }
+    
+    .motto-description {
+       margin-bottom: 30px;
+    }
+    
+    .motto-btn-arrow {
+      fill: var(--main-text-color-light);
+      margin-bottom: 24px;
+    }
+
+    .ice-cream {
+        margin: 0;
+        bottom: 0;
+        right: 92px;
+    }
+
+  }
+
+@media screen and (min-width: 1200px) {
+
+  .dots-tablet {
+    display: none;
+  }
+
+  .dots-desktop {
+    display: block;
+  }
+
+  .hero-tumb {
+    height: 332px;
+  }
+
+  .motto {
+    margin-top: 110px;
+    margin-left: 240px;
+    width: 200px;
+    height: 120;    
+    font-size: 14px;
+    
+  }
+
+  .lot-of-ice-cream {
+    left: 0;
+    bottom: 66px;
+  }
+}
